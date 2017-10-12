@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import style
 import math as math
+import requests
 
 thedata = {'y':[4,8,6,6,7,3,4,5],
           'x':[1,9,9,4,8,2,4,7]}
@@ -38,5 +39,6 @@ print((cov)/(math.sqrt(ymy * xmx)), end=str(chr(13) * 2))
 print('The data correlation ''python calculated'' results : ' , end='')
 print(df['y'].corr(df['x']), end=str(chr(13) * 2))
 
-formulas = open('formulas.txt')
-print(formulas.read())
+formulas = requests.get('https://raw.githubusercontent.com/adamrossnelson/crossreg/master/formulas.txt')
+print(formulas.text)
+

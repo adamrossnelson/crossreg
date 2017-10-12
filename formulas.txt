@@ -1,4 +1,3 @@
-//  Worksheet to check math on calculating correlation.
 // 
 //                        SUM(X - Xbar)(Y - Ybar)
 //  Correlation =  ----------------------------------

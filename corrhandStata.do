@@ -59,5 +59,6 @@ di %-12.4g (`cov') / sqrt(`xmx' * `ymy')
 // Double check the work with existing Stata command.
 pwcorr y x
 
-scalar formulas = fileread("formulas.txt")
+di "Provide notes for reference : "
+scalar formulas = fileread("https://raw.githubusercontent.com/adamrossnelson/crossreg/master/formulas.txt")
 di formulas
