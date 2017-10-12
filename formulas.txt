@@ -1,21 +1,20 @@
-// 
-//                        SUM(X - Xbar)(Y - Ybar)
-//  Correlation =  ----------------------------------
-//                  SQRT(SUM(X-Xbar)^2 SUM(Y-Ybar)^2)
-//
-//                             total covxy
-//  Correlation =  ---------------------------------------
-//                  SQRT(total xmxbarsq * total ymybarsq)
-//
-//                                 cov
-//  Correlation =  ---------------------------------------
-//                          SQRT( xmy * ymy )
-//
-//                               Cov(X,Y)
-//  Correlation =  ---------------------------------------
-//                        SQRT(Var(X) * Var(Y))
-//
-//                               Cov(X,Y)
-//  Correlation =  ---------------------------------------
-//                        SQRT(Var(X) * Var(Y))
-//
+ 
+                        SUM(X - Xbar)(Y - Ybar)
+  Correlation =  ----------------------------------
+                  SQRT(SUM(X-Xbar)^2 SUM(Y-Ybar)^2)
+
+                             total covxy
+  Correlation =  ---------------------------------------
+                  SQRT(total xmxbarsq * total ymybarsq)
+
+                                 cov
+  Correlation =  ---------------------------------------
+                          SQRT( xmy * ymy )
+
+                               Cov(X,Y)
+  Correlation =  ---------------------------------------
+                        SQRT(Var(X) * Var(Y))
+
+                               Cov(X,Y)
+  Correlation =  ---------------------------------------
+                        SQRT(Var(X) * Var(Y))

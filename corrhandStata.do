@@ -28,6 +28,9 @@ replace x = 2 in 6
 replace x = 4 in 7
 replace x = 7 in 8
 
+// List (display) the original data
+list
+
 // Individually calculate Y-Ybar (or Ysubi minus Ybar) | The error terms
 sum y
 gen ymybar = y - r(mean)          // Generate Y-Ybar variable
@@ -52,6 +55,9 @@ gen xmxbarsq = xmxbar * xmxbar    // Generate XBar^2 squared
 sum xmxbarsq                      // Find total
 // The squared error of x is stored in local -xmx-
 local xmx = r(sum)                // Save to local for later reference
+
+// List (display) the data with additional variables
+list
 
 // Display the results of the calculation.
 di %-12.4g (`cov') / sqrt(`xmx' * `ymy')
