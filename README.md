@@ -5,7 +5,7 @@ This project is designed to provide an applied crosswalk between Stata, R, and P
 First demonstrates and implements correlation calculations in each environment. See the file series `coorhandStata.do coorhandPy.py corrhandR.r`. In Stata enter the following command for a demonstration (no downloads necessary):
 
 ```
-do https:raw.githubusercontent.com/adamrossnelson/crossreg/master/corrhandStata.do
+do https://raw.githubusercontent.com/adamrossnelson/crossreg/master/corrhandStata.do
 ```
 In R use the following command for a demonstration (no downloads necessary):
 ```
