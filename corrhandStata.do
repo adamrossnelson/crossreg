@@ -35,14 +35,14 @@ gen ymybar = y - r(mean)          // Generate Y-Ybar variable
 sum x
 gen xmxbar = x - r(mean)          // Generate X-XBar variable
 
-// Generate the covariances which is then used to calculate numerator
+// Generate the covariances; then use to calculate numerator
 // This term is stated as sum of the error terms (from above) multiplied together
 gen covxy = ymybar * xmxbar       // Generate covariances
 sum covxy                         // Find total
 // The local -cov- stores the sum of the covariances, the numerator
 local cov = r(sum)				  // Save to local for later reference
 
-// Generate squared errors which
+// Generate squared errors
 gen ymybarsq = ymybar * ymybar    // Generate YBar^2 squared
 sum ymybarsq                      // Find total
 // The squared error of y is stored in local -ymy-
@@ -59,25 +59,5 @@ di %-12.4g (`cov') / sqrt(`xmx' * `ymy')
 // Double check the work with existing Stata command.
 pwcorr y x
 
-//  Worksheet to check math on calculating correlation.
-// 
-//                        SUM(X - Xbar)(Y - Ybar)
-//  Correlation =  ----------------------------------
-//                  SQRT(SUM(X-Xbar)^2 SUM(Y-Ybar)^2)
-//
-//                             total covxy
-//  Correlation =  ---------------------------------------
-//                  SQRT(total xmxbarsq * total ymybarsq)
-//
-//                                 cov
-//  Correlation =  ---------------------------------------
-//                          SQRT( xmy * ymy )
-//
-//                               Cov(X,Y)
-//  Correlation =  ---------------------------------------
-//                        SQRT(Var(X) * Var(Y))
-//
-//                               Cov(X,Y)
-//  Correlation =  ---------------------------------------
-//                        SQRT(Var(X) * Var(Y))
-//
+scalar formulas = fileread("formulas.txt")
+di formulas
