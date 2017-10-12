@@ -7,6 +7,10 @@ First demonstrates and implements correlation calculations in each environment. 
 ```
 do https:raw.githubusercontent.com/adamrossnelson/crossreg/master/corrhandStata.do
 ```
+In R use the following command for a demonstration (no downloads necessary):
+```
+source("https://raw.githubusercontent.com/adamrossnelson/crossreg/master/corrhandR.r")
+```
 
 Second, demonstrates/Implements OLS regression calculations in each environment. See the file series `reghandStata.do reghandPy.py reghandR.r`.
 
