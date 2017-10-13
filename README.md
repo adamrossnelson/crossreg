@@ -18,6 +18,10 @@ For a similar, but far less technical, example see:
 
 [BadgerGameday](https:github.com/adamrossnelson/BadgerGameday)
 
+## Other Similar References
+
+Over @vikjam replicated, in three ways, tables from (Mostly Harmless Econometrics)[http://www.mostlyharmlesseconometrics.com/]. Check it out at (Mostly Harmless Replication)[https://github.com/vikjam/mostly-harmless-replication]. A two-way dictionary with a growing number of entries compares common Stata and R code and conventions. Originally it was an April 1st fool's joke. But, the dictionary is useful at (RStata)[https://github.com/EconometricsBySimulation/RStata].
+
 ## Questions, Comments, Hatemail
 Send me your questions, comments, and tell me what I did wrong.
 
