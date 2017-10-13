@@ -9,8 +9,8 @@
 
 library(readr)
 
-y <- c(4,8,6,6,7,3,4,5)
-x <- c(1,9,9,4,8,2,4,7)
+y <- c(3,7,6,6,6,3,3,6)
+x <- c(2,10,9,5,8,2,4,8)
 df <- data.frame(y, x)
 
 # Display the original datafram
@@ -45,7 +45,7 @@ cat(rep("\n",2))
 print('The data correlation hand calculated results : ')
 print((cov)/(sqrt(ymy * xmx)))
 cat(rep("\n",2))
-print('Provide formula notes for reference:')
+print('Provide formula notes for reference : ')
 print(cor(df$y, df$x))
 
 print(readLines("https://raw.githubusercontent.com/adamrossnelson/crossreg/master/formulas.txt"))

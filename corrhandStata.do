@@ -10,23 +10,23 @@ set more off
 clear all
 
 set obs 8
-generate y = 4 in 1
-replace y = 8 in 2
+generate y = 3 in 1
+replace y = 7 in 2
 replace y = 6 in 3
 replace y = 6 in 4
-replace y = 7 in 5
+replace y = 6 in 5
 replace y = 3 in 6
-replace y = 4 in 7
-replace y = 5 in 8
+replace y = 3 in 7
+replace y = 6 in 8
 
-generate x = 1 in 1
-replace x = 9 in 2
+generate x = 2 in 1
+replace x = 10 in 2
 replace x = 9 in 3
-replace x = 4 in 4
+replace x = 5 in 4
 replace x = 8 in 5
 replace x = 2 in 6
 replace x = 4 in 7
-replace x = 7 in 8
+replace x = 8 in 8
 
 // List (display) the original data
 list

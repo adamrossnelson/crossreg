@@ -11,8 +11,8 @@ import pandas as pd
 import math as math
 import requests
 
-thedata = {'y':[4,8,6,6,7,3,4,5],
-          'x':[1,9,9,4,8,2,4,7]}
+thedata = {'y':[3,7,6,6,6,3,3,6],
+          'x':[2,10,9,5,8,2,4,8]}
 
 df = pd.DataFrame(thedata)
 
