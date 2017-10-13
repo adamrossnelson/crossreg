@@ -16,7 +16,7 @@ thedata = {'y':[4,8,6,6,7,3,4,5],
 
 df = pd.DataFrame(thedata)
 
-print(df, end=str(chr(13) * 2))
+print(df, end=('\n' * 2))
 
 # Individually calculate Y-bar (or Ysubi minus Ybar) | The error terms
 df = df.assign(ymybar=df['y'] - df['y'].mean())
@@ -39,13 +39,20 @@ df = df.assign(xmxbarsq=df['xmxbar'] * df['xmxbar'])
 xmx = df['xmxbarsq'].sum()
 
 # Display the dataframe with additional variables
-print(df, end=str(chr(13) * 2))
+print(df, end=('\n' * 2))
 
-# Display the results
+# Display the results (print statement that references vars above)
 print('The data correlation ''hand calculated'' results : ', end='')
-print((cov)/(math.sqrt(ymy * xmx)), end=str(chr(13) * 2))
+print((cov)/(math.sqrt(ymy * xmx)), end=('\n' * 2))
+
+# Simplified, less verbose option not dependant on vars above
+print('Alternate, results without reference to variables: ', end='')
+print((df['covxy'].sum())/ \
+math.sqrt((df['ymybarsq'].sum()) * (df['xmxbarsq'].sum())), end=('\n' * 2))
+
+# pring using available corr method
 print('The data correlation ''python calculated'' results : ' , end='')
-print(df['y'].corr(df['x']), end=str(chr(13) * 2))
+print(df['y'].corr(df['x']), end=('\n' * 2))
 
 formulas = requests.get('https://raw.githubusercontent.com/adamrossnelson/crossreg/master/formulas.txt')
 print('Provide formula notes for reference:')
