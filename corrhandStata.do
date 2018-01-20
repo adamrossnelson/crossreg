@@ -52,7 +52,7 @@ local xmx = r(sum)                // Save to local for later reference
 list
 
 // Display the results of the calculation.
-di %-12.4g (`cov') / sqrt(`xmx' * `ymy')
+di %-12.4g (`cov') / sqrt(`xmx' * `ymy') " =     (`cov') / sqrt(`xmx' * `ymy')"
 
 // Double check the work with existing Stata command.
 pwcorr y x
