@@ -14,9 +14,9 @@ source("https://raw.githubusercontent.com/adamrossnelson/crossreg/master/corrhan
 
 Second, demonstrates/Implements OLS regression calculations in each environment. See the file series `reghandStata.do reghandPy.py reghandR.r`.
 
-For a similar, but far less technical, example see:
+For a similar examples see:
 
-[BadgerGameday](https:github.com/adamrossnelson/BadgerGameday)
+[BadgerGameday](https:github.com/adamrossnelson/BadgerGameday) or [rosetta](https://github.com/adamrossnelson/rosetta).
 
 ## Other Similar References
 
