@@ -3,8 +3,8 @@
 #           - See: https:github.com/adamrossnelson/crossreg/blob/master/corrhandStata.do
 # Maintained at: https:github.com/adamrossnelson/crossreg
 
-# Use this do file to calculate the correlation without using -df.corr-
-# Can be used to assist when learning hot to calculate by by hand. Or, useful
+# Use this py file to calculate the correlation without using -df.corr-
+# Can be used to assist when learning how to calculate by by hand. Or, useful
 # when double checking hand work.
 
 import pandas as pd
@@ -42,7 +42,7 @@ xmx = df['xmxbarsq'].sum()
 print(df, end=('\n' * 2))
 
 # Display the results (print statement that references vars above)
-print('The data correlation ''hand calculated'' results : ', end='')
+print('The correlation ''hand calculated'' results : ', end='')
 print((cov)/(math.sqrt(ymy * xmx)), end=('\n' * 2))
 
 # Simplified, less verbose option not dependant on vars above
@@ -50,8 +50,8 @@ print('Alternate, results without reference to variables: ', end='')
 print((df['covxy'].sum())/ \
 math.sqrt((df['ymybarsq'].sum()) * (df['xmxbarsq'].sum())), end=('\n' * 2))
 
-# pring using available corr method
-print('The data correlation ''python calculated'' results : ' , end='')
+# print using available corr method
+print('The correlation "python calculated" results : ' , end='')
 print(df['y'].corr(df['x']), end=('\n' * 2))
 
 formulas = requests.get('https://raw.githubusercontent.com/adamrossnelson/crossreg/master/formulas.txt')

@@ -3,8 +3,8 @@
 #           - See: https:github.com/adamrossnelson/crossreg/blob/master/corrhandStata.do
 # Maintained at: https:github.com/adamrossnelson/crossreg
 
-# Use this do file to calculate the correlation without using -___________-
-# Can be used to assist when learning hot to calculate by by hand. Or, useful
+# Use this R file to calculate the correlation without using stndard packages.
+# Can be used to assist when learning how to calculate by by hand. Or, useful
 # when double checking hand
 
 library(readr)

@@ -1,9 +1,9 @@
-// Fall 2017 - Adam Ross Nelson - Updated.
+// Fall   2017 - Adam Ross Nelson - Updated.
 // Spring 2015 - Adam Ross Nelson - Original draft
 // Maintained at: https://github.com/adamrossnelson/crossreg
 
 // Use this do file to calculate the correlation without using -corr- or -pwcorr-
-// Can be used to assist when learning hot to calculate by by hand. Or, useful
+// Can be used to assist when learning how to calculate by by hand. Or, useful
 // when double checking hand work.
 
 set more off
