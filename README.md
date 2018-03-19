@@ -16,7 +16,9 @@ Second, demonstrates/Implements OLS regression calculations in each environment.
 
 ## For a similar examples
 
-See: [BadgerGameday](https:github.com/adamrossnelson/BadgerGameday) or [rosetta](https://github.com/adamrossnelson/rosetta).
+See: [BadgerGameday](https:github.com/adamrossnelson/BadgerGameday) or [rosetta](https://github.com/adamrossnelson/rosetta).  
+
+This [StataQuickReference](https://github.com/adamrossnelson/StataQuickReference) repot also offers a [Stata to Pandas Cross-Walk](https://github.com/adamrossnelson/StataQuickReference/blob/master/spcrosswlk.md).
 
 ## Other Similar References
 
