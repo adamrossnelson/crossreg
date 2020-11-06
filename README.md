@@ -1,5 +1,8 @@
 # crossreg
 ## Introduction
+
+A rosetta stone project.
+
 This project is designed to provide an applied crosswalk between Stata, R, and Python. Other crosswalks provide a list of columns with equivalent code snippits. This crosswalk aims to provide similar projects in different environments. Aside from being useful as a crosswalk this project can be useful in teaching and/or learning first semester statistics.
 
 First demonstrates and implements correlation calculations in each environment. See the file series `coorhandStata.do coorhandPy.py corrhandR.r`. In Stata enter the following command for a demonstration (no downloads necessary):
